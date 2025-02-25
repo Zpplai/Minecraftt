@@ -1,0 +1,204 @@
+body {
+    background-image: url('img/mine.jpeg');
+    margin: 0;
+    padding: 0;
+    
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'terror', sans-serif; 
+}
+
+#nome {
+    
+    font-size: 4w;
+    height: auto;
+    width: auto;
+    background-color:2s, color 2s;
+    position: absolute;
+    top: 20px;
+}
+#nome2 {
+    
+}
+@font-face {
+    font-family: 'terror';
+    src: url('font/terror.otf');
+}
+
+
+
+#nome {
+    font-size: 28px;
+    font-family: 'terror', sans-serif;
+    animation: mudarCor 15s infinite;
+}
+
+img{
+    border-radius:10px;
+    height:150px;
+}
+
+#opcoes{
+    color: white;
+    background-image: url('img/Steve.jpeg');
+    border-radius:10px;
+    position:relative;
+    top: 310px;
+    display: block;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: 1s;
+    box-shadow: 2px 2px 2px black;
+       
+    }
+#agradecimento{
+    color: white;
+    background-image: url('img/trigo.jpeg');
+    border-radius:10px;
+    position:relative;
+    top: 310px;
+    display: block;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: 1s;
+}
+
+#opcoes:hover,#agradecimento:hover{
+    transition:1s;
+    transform: scale(1.1);
+    color: black;
+    background-color: white;
+}
+.carrossel:hover{
+    transition:1s;
+    transform: scale(1.5);
+    color: black;
+    background-color: white;
+}
+@keyframes mudarCor {
+    0% {
+        color: red;
+    }
+    10% {
+        color: black;
+    }
+    20% {
+        color: white;
+    }
+    30% {
+        color: red;
+    }
+    40% { 
+        color: white;
+    }
+    50% {
+        color: red;
+    }
+    50% {
+        color: black;
+    }
+    50% {
+        color:white ;
+    }
+    70% {
+        color: red;       
+    }
+    80% {
+        color:white ;
+    }
+    90% {
+        color: red;
+    }
+    100%{
+        color: white;
+    }
+   
+}
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carrossel {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    position: absolute;
+    top: 150px;
+    transition: 2s;
+}
+
+.slides {
+    display: flex;
+    animation: slide 16s infinite; /* A duração da animação agora é 16 segundos */
+}
+
+.slides img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 1s ease-in-out; /* Transição suave para o efeito de crescimento */
+}
+
+/* Animação de slide */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(-100%);
+    }
+    20% {
+        transform: translateX(-200%);
+    }
+    30% {
+        transform: translateX(-300%);
+    }
+    40% {
+        transform: translateX(-400%);
+    }
+    50% {
+        transform: translateX(-500%);
+    }
+    60% {
+        transform: translateX(-600%);
+    }
+    70% {
+        transform: translateX(-700%);
+    }
+    80% {
+        transform: translateX(-800%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+#relogio {
+            font-size:30px;
+            padding:2px;
+            background-image: url('img/trigo.jpeg');
+            border-radius: 10px;
+            position: absolute;
+            top: 720px;
+            left: 120px;
+    }
+#data{
+    font-size:30px;
+            padding:2px;
+            background-image: url('img/trigo.jpeg');
+            border-radius: 10px;
+            position: absolute;
+            top: 4000px;
+            left: 120px;
+}
